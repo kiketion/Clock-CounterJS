@@ -31,6 +31,13 @@ h1 {
   margin-top: -80px;
 }
 
+h3 {
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  position: center;
+}
+
 .container {
   justify-content: center;
   align-items: center;
@@ -44,10 +51,9 @@ h1 {
 }
 
 #clock {
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 87px;
   width: 450px;
-  /* margin: 100px; */
   border: 2px solid black;
   border-radius: 20px;
   margin-left: auto;
