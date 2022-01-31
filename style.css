@@ -105,3 +105,18 @@ body {
 #answer1 {
   text-align: center;
 }
+
+/* ToDo List */
+
+.todo-body {
+  margin-top: 30px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
