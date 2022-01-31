@@ -6,6 +6,29 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.main-title {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  text-shadow: -1px 1px 0 green, 1px 1px 0 green, 1px -1px 0 green,
+    -1px -1px 0 green;
+}
+
+/* clock */
+
+#clock {
+  margin-top: 40px;
+  background-color: white;
+  font-size: 87px;
+  width: 540px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Counter */
+
 .counter-btn {
   width: 90px;
   height: 60px;
@@ -35,7 +58,7 @@ body {
   justify-content: center;
 }
 
-.container {
+.counter-container {
   margin-top: 50px;
   background-color: white;
   border: 5px solid black;
@@ -45,16 +68,7 @@ body {
   margin-right: auto;
 }
 
-#clock {
-  margin-top: 100px;
-  background-color: white;
-  font-size: 87px;
-  width: 540px;
-  border: 2px solid black;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* Habits Question */
 
 #habits {
   margin-top: 50px;

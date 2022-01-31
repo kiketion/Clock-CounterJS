@@ -1,20 +1,3 @@
-var data = 0;
-
-// document.getElementById("counting").innerText = data;
-
-function increment() {
-  data = data + 1;
-  document.getElementById('counting').innerText = data;
-}
-
-function decrement() {
-  if (data - 1 < 0) {
-    return;
-  }
-  data = data - 1;
-  document.getElementById('counting').innerText = data;
-}
-
 // Digital Clock
 function showTime() {
   let time = new Date();
@@ -45,8 +28,23 @@ setInterval(() => {
   showTime();
 }, 100);
 
-// Habit Questions
+// Counter
+var data = 0;
 
+function increment() {
+  data = data + 1;
+  document.getElementById('counting').innerText = data;
+}
+
+function decrement() {
+  if (data - 1 < 0) {
+    return;
+  }
+  data = data - 1;
+  document.getElementById('counting').innerText = data;
+}
+
+// Habit Questions
 function habit1() {
   let text;
   let gymDays = prompt('How many days a week do you exercise?');
