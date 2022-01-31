@@ -20,7 +20,7 @@ function showTime() {
   sec = sec < 10 ? '0' + sec : sec;
 
   const currentTime = hour + ':' + min + ':' + sec + am_pm;
-  console.log(currentTime);
+
   document.getElementById('clock').innerText = currentTime;
 }
 
@@ -80,6 +80,36 @@ function habit1() {
 }
 
 // To Do List
+function newTodo() {
+  let myNodelist = document.getElementsByTagName('LI');
+  for (let i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement('SPAN');
+    var txt = document.createTextNode('\u00D7');
+    span.className = 'close';
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
+
+  let close = document.getElementsByClassName('close');
+  for (let i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      let div = this.parentElement;
+      div.style.display = 'none';
+    };
+  }
+
+  let list = document.querySelector('ul');
+  list?.addEventListener(
+    'click',
+    function (ev) {
+      if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+      }
+    },
+    false
+  );
+}
+
 function newElement() {
   let li = document.createElement('li');
   let inputValue = document.getElementById('inputTodo').value;
@@ -92,16 +122,19 @@ function newElement() {
   }
   document.getElementById('inputTodo').value = '';
 
-  let span = document.createElement('SPAN');
+  let span = document.createElement('span');
   let txt = document.createTextNode('\u00D7');
   span.className = 'close';
   span.appendChild(txt);
   li.appendChild(span);
 
-  for (i = 0; i < close.length; i++) {
+  let close = document.getElementsByClassName('close');
+  for (let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-      var div = this.parentElement;
+      let div = this.parentElement;
       div.style.display = 'none';
     };
   }
 }
+
+newTodo();
