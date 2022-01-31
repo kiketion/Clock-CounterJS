@@ -14,11 +14,18 @@
     <!-- Counter with Buttons -->
     <div class="container">
       <h1>JavaScript Counter</h1>
-      <button onclick="decrement()">-</button>
+      <button class="counter-btn" onclick="decrement()">-</button>
       <h2 id="counting">0</h2>
-      <button onclick="increment()">+</button>
+      <button class="counter-btn" onclick="increment()">+</button>
     </div>
 
     <script src="index.js"></script>
+
+    <!-- Good Advices to Get Some Better Habits -->
+    <div id="habits">
+      <h4>Click the button to answer the Question!</h4>
+      <button class="habits-btn" onclick="habit1()">Click Me!</button>
+      <p id="answer1"></p>
+    </div>
   </body>
 </html>

@@ -6,7 +6,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button {
+.counter-btn {
   width: 90px;
   height: 60px;
   font-size: 30px;
@@ -14,7 +14,7 @@ button {
   color: white;
 }
 
-button:hover {
+.counter-btn:hover {
   background-color: purple;
   color: grey;
 }
@@ -65,4 +65,28 @@ h3 {
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#habits {
+  margin-top: 50px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.habits-btn {
+  width: 80px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  align-items: center;
 }
