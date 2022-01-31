@@ -90,3 +90,15 @@ h3 {
   color: white;
   align-items: center;
 }
+
+.habit-center-btn {
+  display: flex;
+}
+
+.habit-center-h4 {
+  text-align: center;
+}
+
+#answer1 {
+  text-align: center;
+}
