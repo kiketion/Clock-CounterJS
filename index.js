@@ -78,3 +78,30 @@ function habit1() {
   }
   document.getElementById('answer1').innerText = text;
 }
+
+// To Do List
+function newElement() {
+  let li = document.createElement('li');
+  let inputValue = document.getElementById('inputTodo').value;
+  let t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert('You must write something!');
+  } else {
+    document.getElementById('ulTodo').appendChild(li);
+  }
+  document.getElementById('inputTodo').value = '';
+
+  let span = document.createElement('SPAN');
+  let txt = document.createTextNode('\u00D7');
+  span.className = 'close';
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      var div = this.parentElement;
+      div.style.display = 'none';
+    };
+  }
+}
